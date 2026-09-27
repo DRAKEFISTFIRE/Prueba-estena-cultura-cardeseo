@@ -67,6 +67,4 @@ Desktop.ini
 *.pfx
 *.orig
 *.rej
-EOF
-*docker-compose.yml.*
-docker-compose.yml
+docker-compose.yml.*
