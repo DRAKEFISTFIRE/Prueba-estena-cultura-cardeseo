@@ -1,0 +1,23 @@
+{
+  "name": "estrena-cultura",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test:e2e": "playwright test",
+    "test:a11y": "playwright test tests/a11y.spec.ts",
+    "typecheck": "npm --prefix backend run typecheck && npm --prefix frontend run typecheck",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^9.2.1",
+    "husky": "^9.1.7",
+    "typescript": "^5.9.2",
+    "@axe-core/playwright": "^4.10.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
